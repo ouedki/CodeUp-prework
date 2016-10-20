@@ -1,0 +1,63 @@
+@keyframes animate-background {
+	from {background-position: 0px 0px;}
+	to {background-position: -320px 0px;}
+}
+
+h2 {
+	color: #b1af47;
+	text-decoration: underline;
+}
+body{
+	color: #b2b7bf;
+	background-image: url(img/sky.gif);
+	font-family: "Gloria Hallelujah";
+	background-repeat: repeat;
+	background-position: 0px 0px;
+	animation: animate-background linear 30s infinite;
+
+}
+#pic {
+	height: 150px;
+	width: 220px;
+}
+#picbig {
+	position: absolute;
+	width: 0px;
+	transition: width .2s linear 0s;
+	z-index: 10px;
+}
+#pic:hover + #picbig {
+	width: 500px;
+}
+ul>li {
+	list-style: square;
+}
+table, td, tr {
+	font-size: 18px;
+	border: 2px;
+	border-color: #555;
+	border-style: solid;
+
+}
+th {
+	border: 2px;
+	border-color: #555;
+	border-style: solid;
+	font-weight: solid;
+
+}
+a:link {
+	color:#b95353;
+}
+
+a:visited {
+	color:#65654f;
+}
+
+a:hover {
+	color:blue;
+}
+
+a:active {
+	color:green;
+}

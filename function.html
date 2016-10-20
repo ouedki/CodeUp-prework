@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Functions JS</title>
+	</head>
+	<body>
+			<script>
+				"use strict";
+
+				var myNameIs = 'Yassine';
+
+				function sayHello (name) {
+					console.log('Hello ' + name);
+				}
+				sayHello(myNameIs);
+
+				var random = Math.floor((Math.random()*100)+1);
+				console.log('The random number is : ' + random);
+
+				function isOdd (i) {
+				(i % 2 === 1) ? console.log('Number is odd') : console.log('Number is even');
+				}
+				isOdd(random);
+				// Create a function called 'isOdd' that takes a number as a parameter.
+				// The function should use the ternary operator to log a message.
+				// The log should tell the number passed in and whether it is odd or not.
+
+				// TODO: Call the function 'isOdd' passing the variable 'random' as a parameter.
+			</script>
+	</body>
+</html>

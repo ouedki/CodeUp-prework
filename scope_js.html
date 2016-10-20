@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Scope JS</title>
+	</head>
+	<body>
+			<script>
+				"use strict";
+				(function() {
+
+					var myNameIs = 'Yassine';
+
+					function sayHello (name) {
+						console.log('Hello ' + name);
+					}
+					sayHello(myNameIs);
+
+					var random = Math.floor((Math.random()*100)+1);
+					console.log('The random number is : ' + random);
+
+					function isOdd (i) {
+					(i % 2 === 1) ? console.log('Number is odd') : console.log('Number is even');
+					}
+					isOdd(random);
+				})();
+
+			</script>
+	</body>
+</html>
